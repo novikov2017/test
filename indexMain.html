@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Document</title><link rel="stylesheet" href="style.css"><script src="js/jquery.min.js"></script><script src="js/jquery.bxslider.min.js"></script></head><body><div class="page"><div class="sidebar"><div class="sidebarBottom"><ul class="icons"><li><a href=""><img src="images/facebook.png" alt=""></a></li><li><a href=""><img src="images/linkedin.png" alt=""></a></li><li><a href=""><img src="images/rss.png" alt=""></a></li><li><a href=""><img src="images/youtube.png" alt=""></a></li></ul><h4>made by Internet project</h4></div><div class="logo"><a href=""><img src="images/logo.png" alt="logo"></a></div><div class="menu"><ul class="sidebarMenu"><li><a class="home" href="">HOME</a></li><li class="blog"><a href="">BLOG</a><ul class="sidebarMenuPost hoverBlog"><li><a href="">BLOG#1</a></li><li><a href="">BLOG#2</a></li><li><a href="">BLOG#3</a></li></ul></li><li class="portfolio"><a href="">PORTFOLIO</a><ul class="sidebarMenuPost hoverPortfolio"><li><a href="">PAGE#1</a></li><li><a href="">PAGE#2</a></li><li><a href="">PAGE#3</a></li></ul></li><li class="gallery"><a href="">GALLERY</a><ul class="sidebarMenuPost hoverGallery"><li><a href="">Article#1</a></li><li><a href="">Article#2</a></li><li><a href="">Article#3</a></li></ul></li></ul></div></div><div class="wrapper"><div class="slider"><ul class="sliderList"><li></li><li></li><li></li></ul></div><div class="wrapperArticles"><h3>Lorem ipsum dolor sit amet</h3><ul class="articlesList"><li><img src="images/icon_list1.png" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ad nulla, eligendi maxime debitis enim ea nobis fuga <a href="">[Read more...]</a></li><li><img src="images/icon_list1.png" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ad nulla, eligendi maxime debitis enim ea nobis fuga <a href="">[Read more...]</a></li><li><img src="images/icon_list1.png" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ad nulla, eligendi maxime debitis enim ea nobis fuga <a href="">[Read more...]</a></li></ul><ul class="articlesList"><li><img src="images/icon_list1.png" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ad nulla, eligendi maxime debitis enim ea nobis fuga <a href="">[Read more...]</a></li><li><img src="images/icon_list1.png" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ad nulla, eligendi maxime debitis enim ea nobis fuga <a href="">[Read more...]</a></li><li><img src="images/icon_list1.png" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ad nulla, eligendi maxime debitis enim ea nobis fuga <a href="">[Read more...]</a></li></ul></div><div class="buyItNow"><ul class="buyItNowList"></ul><li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, ea, culpa deserunt quas accusamus alias unde aliquam doloribus est.</p></li><li><button class="button">Buy hurry!</button></li></div><div class="wrapperNews"><ul class="wrapperNewsList"><li><div><img src="images/icon_list2.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, ea, culpa deserunt quas accusamus alias unde aliquam doloribus est.</p></div></li><li><div><img src="images/icon_list3.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, ea, culpa deserunt quas accusamus alias unde aliquam doloribus est.</p></div></li><li><div><img src="images/icon_list4.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, ea, culpa deserunt quas accusamus alias unde aliquam doloribus est.</p></div></li></ul><ul class="wrapperNewsList"><li><div><img src="images/icon_list5.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, ea, culpa deserunt quas accusamus alias unde aliquam doloribus est.</p></div></li><li><div><img src="images/icon_list6.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, ea, culpa deserunt quas accusamus alias unde aliquam doloribus est.</p></div></li><li><div><img src="images/icon_list2.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid, ea, culpa deserunt quas accusamus alias unde aliquam doloribus est.</p></div></li></ul></div><footer><p>Copyright 2016</p></footer></div></div><script>$(function(){
+			$('.sliderList').bxSlider({
+				mode:'fade',
+				controls:false,
+				auto: true,
+				pager:false
+				
+			});
+
+			$(".sidebar").css({"margin-left":"350px"})
+			$(".sidebar").delay(500).animate({"margin-left":"0px"},2000)
+			$(".wrapper").delay(2500).fadeIn("slow")
+			$(".sliderList>li").css({"width":"100%"})
+
+       $(".blog").hover(function(){
+         $(".hoverBlog").slideToggle("slow");
+           $(".hoverBlog>li>a").css({"text-shadow":"1px 1px #bfa9a9"});
+       })
+
+       $(".portfolio").hover(function(){
+         $(".hoverPortfolio").slideToggle("slow");
+           $(".hoverPortfolio>li>a").css({"text-shadow":"1px 1px #bfa9a9"});
+       })
+
+       $(".gallery").hover(function(){
+         $(".hoverGallery").slideToggle("slow");
+           $(".hoverGallery>li>a").css({"text-shadow":"1px 1px #bfa9a9"});
+       })
+
+
+
+		})</script></body></html>
